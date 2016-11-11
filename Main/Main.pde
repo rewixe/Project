@@ -36,6 +36,7 @@ void drawIntroBox()
 
 void drawMainScreen()
 {
+  
  stroke(0,190,255);
  fill(0,0,0);
  rect(width*0.3, height*0.3, width*0.35, height*0.66, 7);
@@ -123,8 +124,8 @@ void drawGraph()
 void createGraph()
 {
   frameRate(1);
+  strokeWeight(1);
   stroke(255, 0, 0);
-  strokeWeight(2);
  int x1, y1, x2, y2;
  
  x1 = 50; //set coords to coords of zero point on graph in main sketch
@@ -150,7 +151,7 @@ void createGraph()
 void draw()
 {
   //We need the background here to allow time + date boxes
-  background(0,0,0);
+  background(0);
   drawOptionBox();
   drawDateBox();
   drawTimeBox();
@@ -161,6 +162,7 @@ void draw()
   drawButtons();
   dateAndTime();
   drawGraph();
+
   createGraph();
   
   /*int sec = second();
