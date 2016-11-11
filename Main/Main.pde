@@ -124,6 +124,7 @@ void createGraph()
 {
   frameRate(1);
   stroke(255, 0, 0);
+  strokeWeight(2);
  int x1, y1, x2, y2;
  
  x1 = 50; //set coords to coords of zero point on graph in main sketch
