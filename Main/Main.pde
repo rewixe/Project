@@ -161,9 +161,9 @@ void draw()
   drawGraphBox();
   drawButtons();
   dateAndTime();
+  createGraph();
   drawGraph();
 
-  createGraph();
   
   /*int sec = second();
   int min = minute();
