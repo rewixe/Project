@@ -161,7 +161,6 @@ void draw()
   stroke(255, 0, 0);
   frameRate(1);
   createGraph();
-  createGraph();
   
   /*int sec = second();
   int min = minute();
