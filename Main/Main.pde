@@ -122,6 +122,7 @@ void drawGraph()
 
 void createGraph()
 {
+  frameRate(1);
   stroke(255, 0, 0);
  int x1, y1, x2, y2;
  
@@ -159,7 +160,6 @@ void draw()
   drawButtons();
   dateAndTime();
   drawGraph();
-  frameRate(1);
   createGraph();
   
   /*int sec = second();
