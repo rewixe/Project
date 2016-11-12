@@ -173,6 +173,16 @@ void createRadar()
   
 }
 
+void writeIntro()
+{
+  textSize(20);
+  fill(0, 190, 255);
+  smooth();
+  String txt = "Welcome to the system interface.\nPlease select an option";
+  text(txt, 330, 70, 250, 120);  
+  
+}
+
 
 void draw()
 {
@@ -187,6 +197,7 @@ void draw()
   drawGraphBox();
   drawButtons();
   dateAndTime();
+  writeIntro();
   createRadar();
   createGraph();
   drawGraph();
