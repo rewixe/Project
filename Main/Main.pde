@@ -128,10 +128,10 @@ void createGraph()
   stroke(255, 0, 0);
  int x1, y1, x2, y2;
  
- x1 = 50; //set coords to coords of zero point on graph in main sketch
- y1 = 550;
- x2 = 100;
- y2 = 500;
+ x1 = 700; //set coords to coords of zero point on graph in main sketch
+ y1 = 350;
+ x2 = 750;
+ y2 = 300;
  
  for (int i = 0; i < 7; i++)
  {
