@@ -115,10 +115,10 @@ void drawGraph()
   line(730, 260, 930, 260);
   fill(0,190,255);
   textSize(12);
-  text("S P E E D", 730, 280);
+  text(axis1, 730, 280);
   translate(x,y);
   rotate(-HALF_PI);
-  text("T H R U S T", 0, 0);
+  text(axis2, 0, 0);
 }
 
 void createGraph()
@@ -183,7 +183,12 @@ void writeIntro()
   
 }
 
-int c1, c2, c3 = 0;
+int c1 = 0;
+int c2 = 190;
+int c3 = 255;
+
+String axis1 = "S P E E D";
+String axis2 = "T H R U S T";
 
 void draw()
 {
@@ -239,24 +244,32 @@ void mouseClicked() {
     c1 = 0;
     c2 = 190;
     c3 = 255;
+    axis1 = "S P E E D";
+    axis2 = "T H R U S T";
   }
   
     if (mouseX > 750 && mouseX < 790 && mouseY > 320 && mouseY < 360) {
     c1 = 255;
     c2 = 0;
     c3 = 0;
+    axis1 = "F U E L";
+    axis2 = "D I S T A N C E";
   }
   
-    if (mouseX > 700 && mouseX < 740 && mouseY > 370 && mouseY < 410) {
+  if (mouseX > 700 && mouseX < 740 && mouseY > 370 && mouseY < 410) {
     c1 = 0;
     c2 = 255;
     c3 = 0;
+    axis1 = "A C C E L E R A T I O N";
+    axis2 = "F R I C T I O N";
   }
   
   if (mouseX > 750 && mouseX < 790 && mouseY > 370 && mouseY < 410) {
     c1 = 255;
     c2 = 0;
     c3 = 255;
+    axis1 = "G - F O R C E";
+    axis2 = "S P E E D";
   }
 }
 
