@@ -125,7 +125,7 @@ void createGraph()
 {
   frameRate(9);
   strokeWeight(1);
-  stroke(255, 0, 0);
+  stroke(c1, c2, c3);
  float x1, y1, x2, y2;
  
  x1 = width*0.71; //set coords to coords of zero point on graph in main sketch
@@ -183,6 +183,7 @@ void writeIntro()
   
 }
 
+int c1, c2, c3 = 0;
 
 void draw()
 {
@@ -231,6 +232,20 @@ void draw()
   text(c2, 130, 155);
   s = String.valueOf(y);
   text(s, 140, 155);*/
+}
+
+void mouseClicked() {
+  if (mouseX > 700 && mouseX < 740 && mouseY > 320 && mouseY < 360) {
+    c1 = 0;
+    c2 = 190;
+    c3 = 255;
+  }
+  
+    if (mouseX > 750 && mouseX < 790 && mouseY > 320 && mouseY < 360) {
+    c1 = 255;
+    c2 = 0;
+    c3 = 0;
+  }
 }
 
 //maybe insert titles under graph ie. speed, thrust etc
