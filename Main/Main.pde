@@ -246,6 +246,18 @@ void mouseClicked() {
     c2 = 0;
     c3 = 0;
   }
+  
+    if (mouseX > 700 && mouseX < 740 && mouseY > 370 && mouseY < 410) {
+    c1 = 0;
+    c2 = 255;
+    c3 = 0;
+  }
+  
+  if (mouseX > 750 && mouseX < 790 && mouseY > 370 && mouseY < 410) {
+    c1 = 255;
+    c2 = 0;
+    c3 = 255;
+  }
 }
 
 //maybe insert titles under graph ie. speed, thrust etc
