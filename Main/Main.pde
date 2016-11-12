@@ -128,17 +128,17 @@ void createGraph()
   stroke(255, 0, 0);
  int x1, y1, x2, y2;
  
- x1 = 680; //set coords to coords of zero point on graph in main sketch
+ x1 = 710; //set coords to coords of zero point on graph in main sketch
  y1 = 300;
  x2 = 730;
  y2 = 250;
  
- for (int i = 0; i < 7; i++)
+ for (int i = 0; i < 10; i++)
  {
-  int k = (int) random(50); //random number to be taken away to create coords
+  int k = (int) random(20); //random number to be taken away to create coords
   //line(x1, y1, x2, y2);
-  x1 = x1 + 50;
-  x2 = x2 + 50;
+  x1 = x1 + 20;
+  x2 = x2 + 20;
   y1 = y2;
   y2 = y1 - k;
   
