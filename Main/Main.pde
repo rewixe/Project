@@ -179,7 +179,7 @@ void writeIntro()
   fill(0, 190, 255);
   smooth();
   String txt = "Welcome to the system interface.\nPlease select an option";
-  text(txt, 330, 70, 250, 120);  
+  text(txt, width*0.330, height*0.0875, width*0.250, height*0.15); 
   
 }
 
