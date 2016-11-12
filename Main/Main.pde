@@ -129,9 +129,9 @@ void createGraph()
  int x1, y1, x2, y2;
  
  x1 = 680; //set coords to coords of zero point on graph in main sketch
- y1 = 350;
+ y1 = 300;
  x2 = 730;
- y2 = 300;
+ y2 = 250;
  
  for (int i = 0; i < 7; i++)
  {
