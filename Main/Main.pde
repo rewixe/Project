@@ -123,7 +123,7 @@ void drawGraph()
 
 void createGraph()
 {
-  frameRate(1);
+  frameRate(9);
   strokeWeight(1);
   stroke(255, 0, 0);
  float x1, y1, x2, y2;
@@ -147,6 +147,32 @@ void createGraph()
  }
 }
 
+void createRadar()
+{
+  int centrex; 
+  int centrey; 
+  int r = 100;
+  float[] x = new float[100];
+  float[] y = new float[100];
+  
+   centrex = 800;
+   centrey = 650;
+    
+  //background(0);
+  //strokeWeight(0.3);
+  stroke(0,200,0); 
+  float t = millis()*0.0025; 
+  for(int i = 0; i < 100; i++)
+  {
+     smooth();
+     x[i] = (float) (centrex+r*cos(t - i*0.01)); 
+     y[i] = (float) (centrey+r*sin(t - i*0.01));
+     stroke(0, 200 - i * 2, 0); 
+     line(centrex, centrey, x[i], y[i]);
+  }
+  
+}
+
 
 void draw()
 {
@@ -161,6 +187,7 @@ void draw()
   drawGraphBox();
   drawButtons();
   dateAndTime();
+  createRadar();
   createGraph();
   drawGraph();
 
