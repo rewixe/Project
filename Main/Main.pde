@@ -135,7 +135,7 @@ void createGraph()
  
  for (int i = 0; i < 10; i++)
  {
-  int k = (int) random(20); //random number to be taken away to create coords
+  int k = (int) random((0.02*width)); //random number to be taken away to create coords
   //line(x1, y1, x2, y2);
   x1 = x1 + (0.02*width);
   x2 = x2 + (0.02*width);
