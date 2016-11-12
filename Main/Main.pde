@@ -151,12 +151,12 @@ void createRadar()
 {
   int centrex; 
   int centrey; 
-  int r = 100;
+  int r = 113;
   float[] x = new float[100];
   float[] y = new float[100];
   
-   centrex = 800;
-   centrey = 650;
+   centrex = 825;
+   centrey = 640;
     
   //background(0);
   //strokeWeight(0.3);
