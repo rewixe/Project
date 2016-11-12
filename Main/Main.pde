@@ -126,12 +126,12 @@ void createGraph()
   frameRate(1);
   strokeWeight(1);
   stroke(255, 0, 0);
- int x1, y1, x2, y2;
+ float x1, y1, x2, y2;
  
- x1 = 710; //set coords to coords of zero point on graph in main sketch
- y1 = 300;
- x2 = 730;
- y2 = 250;
+ x1 = width*0.71; //set coords to coords of zero point on graph in main sketch
+ y1 = height*0.375;
+ x2 = width*0.730;
+ y2 = height*0.3125;
  
  for (int i = 0; i < 10; i++)
  {
