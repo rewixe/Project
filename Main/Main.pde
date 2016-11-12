@@ -149,14 +149,14 @@ void createGraph()
 
 void createRadar()
 {
-  int centrex; 
-  int centrey; 
-  int r = 113;
+  float centrex; 
+  float centrey; 
+  float r = width*0.113;
   float[] x = new float[100];
   float[] y = new float[100];
   
-   centrex = 825;
-   centrey = 640;
+   centrex = width*0.825;
+   centrey = height*0.8;
     
   //background(0);
   //strokeWeight(0.3);
