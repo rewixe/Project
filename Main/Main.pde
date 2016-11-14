@@ -183,6 +183,16 @@ void writeIntro()
   
 }
 
+void optionsButtons()
+{
+  stroke(0,190,255);
+  fill(0,0,0);
+  rect(40, 250, 180, 119, 7);
+  rect(40, 379, 180, 119, 7);
+  rect(40, 508, 180, 119, 7);
+  rect(40, 637, 180, 119, 7);
+}
+
 int c1 = 0;
 int c2 = 190;
 int c3 = 255;
@@ -202,6 +212,7 @@ void draw()
   drawRadar();
   drawGraphBox();
   drawButtons();
+  optionsButtons();
   dateAndTime();
   writeIntro();
   createRadar();
