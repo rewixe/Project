@@ -288,6 +288,18 @@ void mouseClicked() {
   if (mouseX > 40 && mouseX < 220 && mouseY > 250 && mouseY < 369) {
     option1.message();
   }
+  
+  if (mouseX > 40 && mouseX < 220 && mouseY > 379 && mouseY < 498) {
+    option1.message();
+  }
+  
+  if (mouseX > 40 && mouseX < 220 && mouseY > 508 && mouseY < 627) {
+    option1.message();
+  }
+  
+  if (mouseX > 40 && mouseX < 220 && mouseY > 637 && mouseY < 756) {
+    option1.message();
+  }
 }
 
 //maybe insert titles under graph ie. speed, thrust etc
