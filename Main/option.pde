@@ -4,9 +4,10 @@ public class option {
    fill(0);
    rect(305,245,340,518);
    System.out.print("test1");
-   String text1 = "this is a test for 1";
-   fill(255);
-   text(text1, 500, 500);
+   String text1 = "System Status";
+   fill(255,0,0);
+   textSize(15);
+   text(text1, 320, 270);
  }
 
  public void message2() {
@@ -15,8 +16,9 @@ public class option {
    rect(305,245,340,518);
    System.out.print("test2");
    String text2 = "this is a test for 2";
-   fill(255);
-   text(text2, 500, 500);
+   fill(255,0,0);
+   textSize(15);
+   text(text2, 320, 270);
  }
  
  public void message3() {
