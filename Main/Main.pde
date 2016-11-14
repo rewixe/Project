@@ -38,7 +38,7 @@ void drawMainScreen()
 {
   
  stroke(0,190,255);
- fill(0,0,0);
+ noFill();
  rect(width*0.3, height*0.3, width*0.35, height*0.66, 7);
 }
 
@@ -116,9 +116,11 @@ void drawGraph()
   fill(0,190,255);
   textSize(12);
   text(axis1, 730, 280);
+  pushMatrix();
   translate(x,y);
   rotate(-HALF_PI);
   text(axis2, 0, 0);
+  popMatrix();
 }
 
 void createGraph()
@@ -208,7 +210,7 @@ option option4 = new option();
 void draw()
 {
   //We need the background here to allow time + date boxes
-  background(0);
+  //background(0);
   drawOptionBox();
   drawDateBox();
   drawTimeBox();
