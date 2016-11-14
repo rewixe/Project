@@ -201,6 +201,9 @@ String axis1 = "S P E E D";
 String axis2 = "T H R U S T";
 
 option option1 = new option();
+option option2 = new option();
+option option3 = new option();
+option option4 = new option();
 
 void draw()
 {
@@ -286,19 +289,19 @@ void mouseClicked() {
   }
     
   if (mouseX > 40 && mouseX < 220 && mouseY > 250 && mouseY < 369) {
-    option1.message();
+    option1.message1();
   }
   
   if (mouseX > 40 && mouseX < 220 && mouseY > 379 && mouseY < 498) {
-    option1.message();
+    option2.message2();
   }
   
   if (mouseX > 40 && mouseX < 220 && mouseY > 508 && mouseY < 627) {
-    option1.message();
+    option3.message3();
   }
   
   if (mouseX > 40 && mouseX < 220 && mouseY > 637 && mouseY < 756) {
-    option1.message();
+    option4.message4();
   }
 }
 
