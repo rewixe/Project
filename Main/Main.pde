@@ -200,6 +200,8 @@ int c3 = 255;
 String axis1 = "S P E E D";
 String axis2 = "T H R U S T";
 
+option option1 = new option();
+
 void draw()
 {
   //We need the background here to allow time + date boxes
@@ -281,6 +283,10 @@ void mouseClicked() {
     c3 = 255;
     axis1 = "G - F O R C E";
     axis2 = "S P E E D";
+  }
+    
+  if (mouseX > 40 && mouseX < 220 && mouseY > 250 && mouseY < 369) {
+    option1.message();
   }
 }
 
