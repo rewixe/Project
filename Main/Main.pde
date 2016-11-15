@@ -207,6 +207,8 @@ option option2 = new option();
 option option3 = new option();
 option option4 = new option();
 
+int optionChoice = 1;
+
 void draw()
 {
   //We need the background here to allow time + date boxes
@@ -225,6 +227,29 @@ void draw()
   createRadar();
   createGraph();
   drawGraph();
+  
+  if (mouseX > 310 && mouseX < 365 && mouseY > 250 && mouseY < 305 && optionChoice == 2)
+  {
+    stroke(255, 0, 255);
+    fill(255,0,255);
+    rect(310,595,330,150,7);
+    fill(255);
+    text("Sector1", 400,700);
+  }
+  
+  if (mouseX < 310 || mouseX > 640 && optionChoice == 2)
+  {
+    stroke(0);
+    fill(0);
+    rect(310,595,330,150);
+  }
+  
+  if (mouseY < 250 || mouseY > 580 && optionChoice == 2)
+  {
+    stroke(0);
+    fill(0);
+    rect(310,595,330,150);
+  }
 
   
   /*int sec = second();

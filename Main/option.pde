@@ -1,5 +1,6 @@
 public class option {
  public void message1() {
+   optionChoice = 1;
    stroke(0);
    fill(0);
    rect(305,245,340,518);
@@ -16,6 +17,7 @@ public class option {
 }
 
  public void message2() {
+   optionChoice = 2;
    stroke(0);
    fill(0);
    rect(305,245,340,518);
@@ -36,17 +38,18 @@ public class option {
   line(310, 470, 640, 470);
   line(310, 525, 640, 525);
   
-  if (mouseX > 200 && mouseX < 250 && mouseY > 200 && mouseY < 250)
+  /*if (mouseX > 200 && mouseX < 250 && mouseY > 200 && mouseY < 250)
   {
     stroke(255, 0, 255);
     noFill();
     rect(20,20,300,50);
     fill(0);
     text("Sector1", 30,30);
-  }
+  }*/
 }
  
  public void message3() {
+   optionChoice = 3;
    stroke(0);
    fill(0);
    rect(305,245,340,518);
@@ -54,6 +57,7 @@ public class option {
 }
  
  public void message4() {
+   optionChoice = 4;
    System.out.print("test4");
  }
   
