@@ -1,0 +1,22 @@
+System Status:
+
+Engines: 4 Active, 0 Inactive
+Altitude: Atmospheric
+Air Pump: On
+Outflow Valves: Enabled
+Hydraulics: Enabled
+Air Circulation: Strong
+Flaps: Up
+Electricity: On
+Missile System: Standby
+Auto-Pilot: Disabled
+Emergency Airlock: Closed
+Nuclear Core: Active
+Brakes: Disabled
+Shield Defences: Up
+
+System Info: 
+
+Aircraft ID: NCC-1701-Z
+Core: Fusion Reactor Type 7X
+
