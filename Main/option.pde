@@ -20,10 +20,30 @@ public class option {
    fill(0);
    rect(305,245,340,518);
    System.out.print("test2");
-   String text2 = "this is a test for 2";
-   fill(255,0,0);
-   textSize(15);
-   text(text2, 320, 270);
+   stroke(255, 0, 255);
+  noFill();
+  rect(310,250,330,330,7);
+  
+  line(365, 250, 365, 580);
+  line(420, 250, 420, 580);
+  line(475, 250, 475, 580);
+  line(530, 250, 530, 580);
+  line(585, 250, 585, 580);
+  
+  line(310, 305, 640, 305);
+  line(310, 360, 640, 360);
+  line(310, 415, 640, 415);
+  line(310, 470, 640, 470);
+  line(310, 525, 640, 525);
+  
+  if (mouseX > 200 && mouseX < 250 && mouseY > 200 && mouseY < 250)
+  {
+    stroke(255, 0, 255);
+    noFill();
+    rect(20,20,300,50);
+    fill(0);
+    text("Sector1", 30,30);
+  }
 }
  
  public void message3() {
