@@ -78,6 +78,9 @@ public class option {
  
  public void message4() {
    optionChoice = 4;
+   stroke(0);
+   fill(0);
+   rect(305,245,340,518);
    System.out.print("test4");
  }
   
