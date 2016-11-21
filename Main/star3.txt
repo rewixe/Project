@@ -1,0 +1,10 @@
+Sirius is a star system and the brightest 
+star in the Earth's night sky. With a visual apparent 
+magnitude of -1.46, it is almost twice as bright as 
+Canopus, the next brightest star. The system has the 
+Bayer designation Alpha Canis Majoris (a CMa). What 
+the naked eye perceives as a single star is actually 
+a binary star system, consisting of a white main 
+sequence star of spectral type A1V, termed 
+Sirius A, and a faint white dwarf companion
+of spectral type DA2, called Sirius B.

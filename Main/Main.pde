@@ -231,6 +231,14 @@ option option2 = new option();
 option option3 = new option();
 option option4 = new option();
 
+stars star1 = new stars();
+stars star2 = new stars();
+stars star3 = new stars();
+stars star4 = new stars();
+stars star5 = new stars();
+stars star6 = new stars();
+
+
 int optionChoice = 1;
 
 void draw()
@@ -253,14 +261,14 @@ void draw()
   drawGraph();
   createPoints();
   
-  //Galaxy 1
+    //Galaxy 1
   if (mouseX > (v1.x-15) && mouseX < (v1.x+15) && mouseY > (v1.y-15) && mouseY < (v1.y+15) && optionChoice == 2)
   {
     stroke(255, 0, 255);
     fill(0);
     rect(310,595,330,150,7);
     fill(255);
-    text("Galaxy 1", 400,700);
+    star1.star1();
   }
   
   
@@ -271,7 +279,7 @@ void draw()
     fill(0);
     rect(310,595,330,150,7);
     fill(255);
-    text("Galaxy 2", 400,700);
+    star2.star2();
   }
   
   
@@ -282,7 +290,7 @@ void draw()
     fill(0);
     rect(310,595,330,150,7);
     fill(255);
-    text("Galaxy 3", 400,700);
+    star3.star3();
   }
   
   //Galaxy 4
@@ -292,7 +300,7 @@ void draw()
     fill(0);
     rect(310,595,330,150,7);
     fill(255);
-    text("Galaxy 4", 400,700);
+    star4.star4();
   }
   
   //Galaxy 5
@@ -302,7 +310,7 @@ void draw()
     fill(0);
     rect(310,595,330,150,7);
     fill(255);
-    text("Galaxy 5", 400,700);
+    star5.star5();
   }
   
   //Galaxy 6
@@ -312,8 +320,9 @@ void draw()
     fill(0);
     rect(310,595,330,150,7);
     fill(255);
-    text("Galaxy 6", 400,700);
+    star6.star6();
   }
+  
   
   /*if (mouseX < 310 || mouseX > 640 && optionChoice == 2)
   {
