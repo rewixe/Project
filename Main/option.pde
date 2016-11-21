@@ -54,6 +54,26 @@ public class option {
    fill(0);
    rect(305,245,340,518);
    System.out.print("test3");
+   
+   //  Print out the stars message, then below technical info about star
+   
+   if(starChoice == 1)
+   {
+     pushMatrix();
+     translate(0,-340);
+     star5.star5();
+     popMatrix();
+     String star1info[] = loadStrings("star1info.txt");
+     pushMatrix();
+     translate(315,420);
+     for (int i = 0 ; i < star1info.length; i++) 
+     { 
+      fill(255,0,0);
+      text(star1info[i], 0,(270*((i+0.3)*0.05)));
+     }
+     popMatrix();
+     }
+   
 }
  
  public void message4() {

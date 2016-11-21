@@ -238,7 +238,7 @@ stars star4 = new stars();
 stars star5 = new stars();
 stars star6 = new stars();
 
-
+int starChoice = 1;
 int optionChoice = 1;
 
 void draw()
@@ -416,6 +416,44 @@ void mouseClicked() {
   
   if (mouseX > 40 && mouseX < 220 && mouseY > 637 && mouseY < 756) {
     option4.message4();
+  }
+  
+      //Galaxy 1
+  if (mouseX > (v1.x-15) && mouseX < (v1.x+15) && mouseY > (v1.y-15) && mouseY < (v1.y+15) && optionChoice == 2)
+  {
+    starChoice = 1;
+  }
+  
+  
+  //Galaxy 2
+  if (mouseX > (v2.x-6) && mouseX < (v2.x+6) && mouseY > (v2.y-6) && mouseY < (v2.y+6) && optionChoice == 2)
+  {
+    starChoice = 2;
+  }
+  
+  
+  //Galaxy 3
+  if (mouseX > (v3.x-12) && mouseX < (v3.x+12) && mouseY > (v3.y-12) && mouseY < (v3.y+12) && optionChoice == 2)
+  {
+    starChoice = 3;
+  }
+  
+  //Galaxy 4
+  if (mouseX > (v4.x-25) && mouseX < (v4.x+25) && mouseY > (v4.y-25) && mouseY < (v4.y+25) && optionChoice == 2)
+  {
+    starChoice = 4;
+  }
+  
+  //Galaxy 5
+  if (mouseX > (v5.x-15) && mouseX < (v5.x+15) && mouseY > (v5.y-15) && mouseY < (v5.y+15) && optionChoice == 2)
+  {
+    starChoice = 5;
+  }
+  
+  //Galaxy 6
+  if (mouseX > (v6.x-15) && mouseX < (v6.x+15) && mouseY > (v6.y-15) && mouseY < (v6.y+15) && optionChoice == 2)
+  {
+    starChoice = 6;
   }
 }
 
