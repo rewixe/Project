@@ -200,13 +200,6 @@ void createPoints()
   noFill();
   if(optionChoice == 2)
   {
-  v1 = new PVector(380, 300);
-  v2 = new PVector(580, 320);
-  v3 = new PVector(450, 350);
-  v4 = new PVector(400, 480);
-  v5 = new PVector(530, 540);
-  v6 = new PVector(540, 430);
-  
   ellipse(v1.x, v1.y, 30, 30);
   ellipse(v2.x, v2.y, 12, 12);
   ellipse(v3.x, v3.y, 24, 24);
@@ -217,6 +210,14 @@ void createPoints()
 }
 
 PVector v1, v2, v3, v4, v5, v6;
+{
+v1 = new PVector(380, 300);
+v2 = new PVector(580, 320);
+v3 = new PVector(450, 350);
+v4 = new PVector(400, 480);
+v5 = new PVector(530, 540);
+v6 = new PVector(540, 430);
+}
 
 int c1 = 0;
 int c2 = 190;
@@ -252,16 +253,69 @@ void draw()
   drawGraph();
   createPoints();
   
-  if (mouseX > 310 && mouseX < 365 && mouseY > 250 && mouseY < 305 && optionChoice == 2)
+  //Galaxy 1
+  if (mouseX > (v1.x-15) && mouseX < (v1.x+15) && mouseY > (v1.y-15) && mouseY < (v1.y+15) && optionChoice == 2)
   {
     stroke(255, 0, 255);
-    fill(255,0,255);
+    fill(0);
     rect(310,595,330,150,7);
     fill(255);
-    text("Sector1", 400,700);
+    text("Galaxy 1", 400,700);
   }
   
-  if (mouseX < 310 || mouseX > 640 && optionChoice == 2)
+  
+  //Galaxy 2
+  if (mouseX > (v2.x-6) && mouseX < (v2.x+6) && mouseY > (v2.y-6) && mouseY < (v2.y+6) && optionChoice == 2)
+  {
+    stroke(255, 0, 255);
+    fill(0);
+    rect(310,595,330,150,7);
+    fill(255);
+    text("Galaxy 2", 400,700);
+  }
+  
+  
+  //Galaxy 3
+  if (mouseX > (v3.x-12) && mouseX < (v3.x+12) && mouseY > (v3.y-12) && mouseY < (v3.y+12) && optionChoice == 2)
+  {
+    stroke(255, 0, 255);
+    fill(0);
+    rect(310,595,330,150,7);
+    fill(255);
+    text("Galaxy 3", 400,700);
+  }
+  
+  //Galaxy 4
+  if (mouseX > (v4.x-25) && mouseX < (v4.x+25) && mouseY > (v4.y-25) && mouseY < (v4.y+25) && optionChoice == 2)
+  {
+    stroke(255, 0, 255);
+    fill(0);
+    rect(310,595,330,150,7);
+    fill(255);
+    text("Galaxy 4", 400,700);
+  }
+  
+  //Galaxy 5
+  if (mouseX > (v5.x-15) && mouseX < (v5.x+15) && mouseY > (v5.y-15) && mouseY < (v5.y+15) && optionChoice == 2)
+  {
+    stroke(255, 0, 255);
+    fill(0);
+    rect(310,595,330,150,7);
+    fill(255);
+    text("Galaxy 5", 400,700);
+  }
+  
+  //Galaxy 6
+  if (mouseX > (v6.x-15) && mouseX < (v6.x+15) && mouseY > (v6.y-15) && mouseY < (v6.y+15) && optionChoice == 2)
+  {
+    stroke(255, 0, 255);
+    fill(0);
+    rect(310,595,330,150,7);
+    fill(255);
+    text("Galaxy 6", 400,700);
+  }
+  
+  /*if (mouseX < 310 || mouseX > 640 && optionChoice == 2)
   {
     stroke(0);
     fill(0);
@@ -273,7 +327,7 @@ void draw()
     stroke(0);
     fill(0);
     rect(310,595,330,150);
-  }
+  }*/
 
   
   /*int sec = second();
