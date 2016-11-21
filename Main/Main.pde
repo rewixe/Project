@@ -195,6 +195,29 @@ void optionsButtons()
   rect(40, 637, 180, 119, 7);
 }
 
+void createPoints()
+{
+  noFill();
+  if(optionChoice == 2)
+  {
+  v1 = new PVector(380, 300);
+  v2 = new PVector(580, 320);
+  v3 = new PVector(450, 350);
+  v4 = new PVector(400, 480);
+  v5 = new PVector(530, 540);
+  v6 = new PVector(540, 430);
+  
+  ellipse(v1.x, v1.y, 30, 30);
+  ellipse(v2.x, v2.y, 12, 12);
+  ellipse(v3.x, v3.y, 24, 24);
+  ellipse(v4.x, v4.y, 50, 50);
+  ellipse(v5.x, v5.y, 30, 30);
+  ellipse(v6.x, v6.y, 30, 30);
+  }
+}
+
+PVector v1, v2, v3, v4, v5, v6;
+
 int c1 = 0;
 int c2 = 190;
 int c3 = 255;
@@ -227,6 +250,7 @@ void draw()
   createRadar();
   createGraph();
   drawGraph();
+  createPoints();
   
   if (mouseX > 310 && mouseX < 365 && mouseY > 250 && mouseY < 305 && optionChoice == 2)
   {
