@@ -76,6 +76,13 @@ void drawRadar()
   stroke(0,190,255);
   fill(0,0,0);
   ellipse(width*0.825, height*0.8, 230, 230);
+  ellipse(width*0.825, height*0.8, 200, 200);
+  ellipse(width*0.825, height*0.8, 170, 170);
+  ellipse(width*0.825, height*0.8, 140, 140);
+  ellipse(width*0.825, height*0.8, 110, 110);
+  ellipse(width*0.825, height*0.8, 80, 80);
+  ellipse(width*0.825, height*0.8, 50, 50);
+  ellipse(width*0.825, height*0.8, 20, 20);
 }
 
 void dateAndTime()
@@ -93,9 +100,9 @@ void dateAndTime()
   int sec = second();
   int min = minute();
   int hr = hour();
-  int d = day();
-  int m = month(); 
-  int y = year();   
+  int day = day();
+  int mon = month(); 
+  int yr = year();   
   
   fill(0,190,255);
   textSize(30);
@@ -111,13 +118,13 @@ void dateAndTime()
   text(c1, width*0.095, height*0.105);
   s = String.valueOf(hr);
   text(s, width*0.045, height*0.105);
-  s = String.valueOf(d);
+  s = String.valueOf(day);
   text(s, width*0.045, height*0.19375);
   text(c2, width*0.083, height*0.19375);
-  s = String.valueOf(m);
+  s = String.valueOf(mon);
   text(s, width*0.090, height*0.19375); 
   text(c2, width*0.130, height*0.19375);
-  s = String.valueOf(y);
+  s = String.valueOf(yr);
   text(s, width*0.140, height*0.19375);
 }
 
@@ -171,21 +178,20 @@ void createRadar()
   float centrex; 
   float centrey; 
   float r = width*0.113;
-  float[] x = new float[100];
-  float[] y = new float[100];
+  float[] xvals = new float[100];
+  float[] yvals = new float[100];
   
   centrex = width*0.825;
   centrey = height*0.8;
   
   stroke(0,200,0); 
-  float t = millis()*0.0025; 
+  float pos = millis()*0.0025; 
   for(int i = 0; i < 100; i++)
   {
-    smooth();
-    x[i] = (float) (centrex+r*cos(t - i*0.01)); 
-    y[i] = (float) (centrey+r*sin(t - i*0.01));
+    xvals[i] = (float) (centrex + r * cos(pos - i*0.01)); 
+    yvals[i] = (float) (centrey + r * sin(pos - i*0.01));
     stroke(0, 200 - i * 2, 0); 
-    line(centrex, centrey, x[i], y[i]);
+    line(centrex, centrey, xvals[i], yvals[i]);
   }  
 }
 
@@ -194,7 +200,6 @@ void writeIntro()
   strokeWeight(1);
   textSize(20);
   fill(0, 190, 255);
-  smooth();
   String txt = "Welcome to the system interface.\nPlease select an option";
   text(txt, width*0.330, height*0.0875, width*0.250, height*0.15); 
 }

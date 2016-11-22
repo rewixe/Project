@@ -56,7 +56,7 @@ public class option {
      textSize(12);
      pushMatrix();
      translate(0,-340);
-     star5.star5();
+     star1.star1();
      popMatrix();
      String star1info[] = loadStrings("star1info.txt");
      pushMatrix();
