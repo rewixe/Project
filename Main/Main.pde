@@ -218,6 +218,8 @@ void createMissiles()
   
   if(optionChoice == 4)
   {
+    fill(0,190,255);
+    textSize(25);
     stroke(0, 190, 255);
     //strokeWeight(5);
     rect(315, 255, 150, 209, 7);
@@ -232,8 +234,6 @@ void createMissiles()
     rect(485, 504, 150, 209, 7);
     text("KRAUT-44", 485, 743);
     image(missile4, 485, 504, 150, 209);
-    
-    
   }
 }
 
@@ -356,6 +356,34 @@ void draw()
     rect(310,595,330,150,7);
     fill(255);
     star6.star6();
+  }
+  
+  if (optionChoice == 4 && missileChoice == 1)
+  {
+    stroke(255,0,0);
+    noFill();
+    rect(315,255,150,209,7);
+  }
+  
+  if (optionChoice == 4 && missileChoice == 2)
+  {
+    stroke(255,0,0);
+    noFill();
+    rect(485,255,150,209,7);
+  }
+  
+  if (optionChoice == 4 && missileChoice == 3)
+  {
+    stroke(255,0,0);
+    noFill();
+    rect(315,504,150,209,7);
+  }
+  
+  if (optionChoice == 4 && missileChoice == 4)
+  {
+    stroke(255,0,0);
+    noFill();
+    rect(485,504,150,209,7);
   }
   
   
@@ -489,6 +517,26 @@ void mouseClicked() {
   if (mouseX > (v6.x-15) && mouseX < (v6.x+15) && mouseY > (v6.y-15) && mouseY < (v6.y+15) && optionChoice == 2)
   {
     starChoice = 6;
+  }
+  
+    if (mouseX > 315 && mouseX < 465 && mouseY > 255 && mouseY < 464 && optionChoice == 4)
+  {
+    missileChoice = 1;
+  }
+  
+  if (mouseX > 485 && mouseX < 635 && mouseY > 255 && mouseY < 464 && optionChoice == 4)
+  {
+    missileChoice = 2;
+  }
+  
+  if (mouseX > 315 && mouseX < 465 && mouseY > 504 && mouseY < 713 && optionChoice == 4)
+  {
+    missileChoice = 3;
+  }
+  
+  if (mouseX > 485 && mouseX < 635 && mouseY > 504 && mouseY < 713 && optionChoice == 4)
+  {
+    missileChoice = 4;
   }
 }
 
