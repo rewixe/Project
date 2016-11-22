@@ -1,5 +1,5 @@
 public class option {
- public void message1() 
+ public void option1() 
  { 
    optionChoice = 1;
    stroke(0);
@@ -19,13 +19,14 @@ public class option {
   }
   
 
- public void message2() 
+ public void option2() 
  {
    optionChoice = 2;
    stroke(0);
    fill(0);
    rect(305,245,340,518);
    stroke(255, 0, 255);
+   strokeWeight(1);
    noFill();
    rect(310,250,330,330,7);
   
@@ -43,14 +44,12 @@ public class option {
 } 
 
  
- public void message3() 
+ public void option3() 
  {
    optionChoice = 3;
    stroke(0);
    fill(0);
    rect(305,245,340,518);
-   
-   //  Print out the stars message, then below technical info about star
    
    if(starChoice == 1)
    {
@@ -73,7 +72,7 @@ public class option {
    
 }
  
- public void message4() 
+ public void option4() 
  {
    optionChoice = 4;
    stroke(0);

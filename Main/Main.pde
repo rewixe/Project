@@ -7,6 +7,7 @@ void setup()
 
 void drawDateBox()
 {
+  strokeWeight(1);
   stroke(0,190,255);
   fill(0,0,0);
   rect(width*0.03, height*0.06, width*0.2, height*0.06,7);
@@ -14,6 +15,7 @@ void drawDateBox()
 
 void drawTimeBox()
 {
+  strokeWeight(1);
   stroke(0,190,255);
   fill(0,0,0);
   rect(width*0.03, height*0.15, width*0.2, height*0.06,7);
@@ -21,7 +23,7 @@ void drawTimeBox()
 
 void drawOptionBox()
 {
-  //set colour for outline
+  strokeWeight(1);
   stroke(0,190,255);
   fill(0,0,0);
   rect(width*0.03, height*0.3, width*0.2, height*0.66, 7);
@@ -29,6 +31,7 @@ void drawOptionBox()
 
 void drawIntroBox()
 {
+  strokeWeight(1);
   stroke(0,190,255);
   fill(0,0,0);
   rect(width*0.3, height*0.06, width*0.35, height*0.22, 7);
@@ -36,7 +39,7 @@ void drawIntroBox()
 
 void drawMainScreen()
 {
-  
+  strokeWeight(1);
   stroke(0,190,255);
   noFill();
   rect(width*0.3, height*0.3, width*0.35, height*0.66, 7);
@@ -44,6 +47,7 @@ void drawMainScreen()
 
 void drawGraphBox()
 {
+  strokeWeight(1);
   stroke(0,190,255);
   fill(0,0,0);
   rect(width*0.7, height*0.06, width*0.25, height*0.3, 7);
@@ -51,6 +55,7 @@ void drawGraphBox()
 
 void drawButtons()
 {
+  strokeWeight(1);
   stroke(0,190,255);
   fill(0,0,0);
   rect(width*0.7, height*0.4, width*0.04, height*0.05, 7);
@@ -61,6 +66,7 @@ void drawButtons()
 
 void drawRadar()
 {
+  strokeWeight(1);
   stroke(0,190,255);
   fill(0,0,0);
   ellipse(width*0.825, height*0.8, 230, 230);
@@ -68,6 +74,7 @@ void drawRadar()
 
 void dateAndTime()
 {
+  strokeWeight(1);
   fill(0);
   noStroke();
   rect(width*0.035, height*0.05625, 100,-15);
@@ -80,9 +87,9 @@ void dateAndTime()
   int sec = second();
   int min = minute();
   int hr = hour();
-  int d = day();    // Values from 1 - 31
-  int m = month();  // Values from 1 - 12
-  int y = year();   // 2003, 2004, 2005, etc.
+  int d = day();
+  int m = month(); 
+  int y = year();   
   
   fill(0,190,255);
   textSize(30);
@@ -110,6 +117,7 @@ void dateAndTime()
 
 void drawGraph()
 {
+  strokeWeight(1);
   float x = 720;
   float y = 255;
   
@@ -141,7 +149,7 @@ void createGraph()
   for (int i = 0; i < 10; i++)
   {
     int k = (int) random((0.02*width)); //random number to be taken away to create coords
-    //line(x1, y1, x2, y2);
+
     x1 = x1 + (0.02*width);
     x2 = x2 + (0.02*width);
     y1 = y2;
@@ -153,6 +161,7 @@ void createGraph()
 
 void createRadar()
 {
+  strokeWeight(1);
   float centrex; 
   float centrey; 
   float r = width*0.113;
@@ -161,9 +170,7 @@ void createRadar()
   
   centrex = width*0.825;
   centrey = height*0.8;
-    
-  //background(0);
-  //strokeWeight(0.3);
+  
   stroke(0,200,0); 
   float t = millis()*0.0025; 
   for(int i = 0; i < 100; i++)
@@ -178,6 +185,7 @@ void createRadar()
 
 void writeIntro()
 {
+  strokeWeight(1);
   textSize(20);
   fill(0, 190, 255);
   smooth();
@@ -187,6 +195,7 @@ void writeIntro()
 
 void optionsButtons()
 {
+  strokeWeight(1);
   stroke(0,190,255);
   fill(0,0,0);
   rect(40, 250, 180, 119, 7);
@@ -197,6 +206,7 @@ void optionsButtons()
 
 void createPoints()
 {
+  strokeWeight(1);
   noFill();
   if(optionChoice == 2)
   {
@@ -221,7 +231,7 @@ void createMissiles()
     fill(0,190,255);
     textSize(25);
     stroke(0, 190, 255);
-    //strokeWeight(5);
+    strokeWeight(7);
     rect(315, 255, 150, 209, 7);
     text("EXMPL-42X", 315, 494);
     image(missile1, 315, 255, 150, 209);
@@ -282,7 +292,6 @@ int missileChoice = 1;
 
 void draw()
 {
-  //background(0);
   drawOptionBox();
   drawDateBox();
   drawTimeBox();
@@ -434,22 +443,22 @@ void mouseClicked() {
     
   if (mouseX > 40 && mouseX < 220 && mouseY > 250 && mouseY < 369) 
   {
-    option1.message1();
+    option1.option1();
   }
   
   if (mouseX > 40 && mouseX < 220 && mouseY > 379 && mouseY < 498) 
   {
-    option2.message2();
+    option2.option2();
   }
   
   if (mouseX > 40 && mouseX < 220 && mouseY > 508 && mouseY < 627) 
   {
-    option3.message3();
+    option3.option3();
   }
   
   if (mouseX > 40 && mouseX < 220 && mouseY > 637 && mouseY < 756) 
   {
-    option4.message4();
+    option4.option4();
   }
   
   //Star 1
