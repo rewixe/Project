@@ -9,10 +9,14 @@ public class option {
    String lines[] = loadStrings("status.txt");
    pushMatrix();
    translate(320,270);
+   textSize(25);
+   fill(255,0,0);
+   text("SYSTEM STATUS: ", 0, 5);
+   textSize(15);
    for (int i = 0 ; i < lines.length; i++) 
    { 
      fill(255,0,0);
-     text(lines[i], 0,(270*((i+0.3)*0.05)));
+     text(lines[i], 0,(270*((i+0.3)*0.06)));
    }
    
    popMatrix();

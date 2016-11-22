@@ -244,16 +244,16 @@ void createMissiles()
     stroke(0, 190, 255);
     strokeWeight(7);
     rect(315, 255, 150, 209, 7);
-    text("EXMPL-42X", 315, 494);
+    text("TYPE-77", 315, 494);
     image(missile1, 315, 255, 150, 209);
     rect(485, 255, 150, 209, 7);
-    text("TST-TXT98", 485, 494);
+    text("AIM-9X", 485, 494);
     image(missile2, 485, 255, 150, 209);
     rect(315, 504, 150, 209, 7);
-    text("US-2000Z", 315, 743);
+    text("ARCHER-11", 315, 743);
     image(missile3, 315, 504, 150, 209);
     rect(485, 504, 150, 209, 7);
-    text("KRAUT-44", 485, 743);
+    text("BRAUN-2X", 485, 743);
     image(missile4, 485, 504, 150, 209);
   }
 }

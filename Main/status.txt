@@ -1,4 +1,4 @@
-System Status:
+
 
 Engines: 4 Active, 0 Inactive
 Altitude: Atmospheric
@@ -15,7 +15,7 @@ Nuclear Core: Active
 Brakes: Disabled
 Shield Defences: Up
 
-System Info: 
+Spaceship Info: 
 
 Aircraft ID: NCC-1701-Z
 Core: Fusion Reactor Type 7X
