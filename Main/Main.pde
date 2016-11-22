@@ -284,7 +284,10 @@ void draw()
   createGraph();
   drawGraph();
   createPoints();
-  createMissiles();
+  if(optionChoice == 4)
+  {
+    createMissiles();
+  }
   
     //Galaxy 1
   if (mouseX > (v1.x-15) && mouseX < (v1.x+15) && mouseY > (v1.y-15) && mouseY < (v1.y+15) && optionChoice == 2)
@@ -299,7 +302,7 @@ void draw()
   
   //Galaxy 2
   if (mouseX > (v2.x-6) && mouseX < (v2.x+6) && mouseY > (v2.y-6) && mouseY < (v2.y+6) && optionChoice == 2)
-  {
+  { 
     stroke(255, 0, 255);
     fill(0);
     rect(310,595,330,150,7);
