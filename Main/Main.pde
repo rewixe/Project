@@ -405,35 +405,6 @@ void draw()
     rect(310,595,330,150);
   }*/
 
-  
-  /*int sec = second();
-  int min = minute();
-  int hr = hour();
-  int d = day();    // Values from 1 - 31
-  int m = month();  // Values from 1 - 12
-  int y = year();   // 2003, 2004, 2005, etc.
-  
-  fill(0,190,255);
-  textSize(30);
-  
-  char c1 = ':';
-  char c2 = '|';
-  String s = String.valueOf(sec);
-  text(s,180,84);
-  text(c1, 160, 84);
-  s = String.valueOf(min);
-  text(s, 113, 84);
-  text(c1, 95, 84);
-  s = String.valueOf(hr);
-  text(s, 45, 84);
-  s = String.valueOf(d);
-  text(s, 45, 155);
-  text(c2, 83, 155);
-  s = String.valueOf(m);
-  text(s, 90, 155); 
-  text(c2, 130, 155);
-  s = String.valueOf(y);
-  text(s, 140, 155);*/
 }
 
 void mouseClicked() {
