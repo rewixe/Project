@@ -23,6 +23,12 @@ void drawTimeBox()
 
 void drawOptionBox()
 {
+  fill(0);
+  noStroke();
+  rect(50,200,140,35);
+  fill(0,190,255);
+  textSize(20);
+  text("O P T I O N S", 67, 230);
   strokeWeight(1);
   stroke(0,190,255);
   fill(0,0,0);
