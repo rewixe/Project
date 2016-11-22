@@ -22,8 +22,3 @@ Companion	B
 Period (P)	79.91 ± 0.011 yr
 Semi-major axis (a)	17.57 ± 0.022"
 Eccentricity (e)	0.5179 ± 0.00076
-Inclination (i)	79.205 ± 0.041°
-Longitude of the node (O)	204.85 ± 0.084°
-Periastron epoch (T)	1875.66 ± 0.012
-Argument of periastron (?)
-(secondary)	231.65 ± 0.076°

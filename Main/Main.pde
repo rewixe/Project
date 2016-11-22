@@ -209,6 +209,30 @@ void createPoints()
   }
 }
 
+void createMissiles()
+{
+  missile1 = loadImage("missile1.jpg");
+  missile2 = loadImage("missile2.jpg");
+  missile3 = loadImage("missile3.jpg");
+  missile4 = loadImage("missile4.jpg");
+  
+  if(optionChoice == 4)
+  {
+    stroke(0, 190, 255);
+    //strokeWeight(5);
+    rect(315, 255, 150, 209, 7);
+    image(missile1, 315, 255, 150, 209);
+    rect(485, 255, 150, 209, 7);
+    image(missile2, 485, 255, 150, 209);
+    rect(315, 504, 150, 209, 7);
+    image(missile3, 315, 504, 150, 209);
+    rect(485, 504, 150, 209, 7);
+    image(missile4, 485, 504, 150, 209);
+  }
+}
+
+PImage missile1, missile2, missile3, missile4;
+
 PVector v1, v2, v3, v4, v5, v6;
 {
 v1 = new PVector(380, 300);
@@ -260,6 +284,7 @@ void draw()
   createGraph();
   drawGraph();
   createPoints();
+  createMissiles();
   
     //Galaxy 1
   if (mouseX > (v1.x-15) && mouseX < (v1.x+15) && mouseY > (v1.y-15) && mouseY < (v1.y+15) && optionChoice == 2)
