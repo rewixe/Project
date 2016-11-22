@@ -59,6 +59,7 @@ public class option {
    
    if(starChoice == 1)
    {
+     textSize(12);
      pushMatrix();
      translate(0,-340);
      star5.star5();

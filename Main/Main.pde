@@ -221,13 +221,19 @@ void createMissiles()
     stroke(0, 190, 255);
     //strokeWeight(5);
     rect(315, 255, 150, 209, 7);
+    text("EXMPL-42X", 315, 494);
     image(missile1, 315, 255, 150, 209);
     rect(485, 255, 150, 209, 7);
+    text("TST-TXT98", 485, 494);
     image(missile2, 485, 255, 150, 209);
     rect(315, 504, 150, 209, 7);
+    text("US-2000Z", 315, 743);
     image(missile3, 315, 504, 150, 209);
     rect(485, 504, 150, 209, 7);
+    text("KRAUT-44", 485, 743);
     image(missile4, 485, 504, 150, 209);
+    
+    
   }
 }
 
@@ -264,6 +270,7 @@ stars star6 = new stars();
 
 int starChoice = 1;
 int optionChoice = 1;
+int missileChoice = 1;
 
 void draw()
 {
