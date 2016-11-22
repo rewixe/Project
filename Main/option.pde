@@ -5,6 +5,7 @@ public class option {
    fill(0);
    rect(305,245,340,518);
    System.out.print("test3");
+   textSize(12);
    String lines[] = loadStrings("status.txt");
    pushMatrix();
    translate(320,270);

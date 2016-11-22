@@ -68,6 +68,10 @@ void drawRadar()
 
 void dateAndTime()
 {
+  fill(0);
+  noStroke();
+  rect(width*0.035, height*0.05625, 100,-15);
+  rect(width*0.035, height*0.14375, 100, -15);
   fill(0,190,255);
   textSize(15);
   text("T I M E", width*0.035, height*0.05625);
