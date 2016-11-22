@@ -64,10 +64,22 @@ void drawButtons()
   strokeWeight(1);
   stroke(0,190,255);
   fill(0,0,0);
+  fill(0,190,255);
   rect(width*0.7, height*0.4, width*0.04, height*0.05, 7);
+  fill(0);
+  text("1", width*0.715, height*0.435);
+  fill(0,190,255);
   rect(width*0.75, height*0.4, width*0.04, height*0.05, 7);
+  fill(0);
+  text("2", width*0.765, height*0.435);
+  fill(0,190,255);
   rect(width*0.7, height*0.46, width*0.04, height*0.05, 7);
+  fill(0);
+  text("3", width*0.715, height*0.495);
+  fill(0,190,255);
   rect(width*0.75, height*0.46, width*0.04, height*0.05, 7);
+  fill(0);
+  text("4", width*0.765, height*0.495);
 }
 
 void drawRadar()
@@ -209,10 +221,22 @@ void optionsButtons()
   strokeWeight(1);
   stroke(0,190,255);
   fill(0,0,0);
+  fill(0,190,255);
   rect(40, 250, 180, 119, 7);
+  fill(0);
+  text("STATUS", 90,320);
+  fill(0,190,255);
   rect(40, 379, 180, 119, 7);
+  fill(0);
+  text("STAR\n MAP", 100,430);
+  fill(0,190,255);
   rect(40, 508, 180, 119, 7);
+  fill(0);
+  text("STAR\nINFO", 105,560);
+  fill(0,190,255);
   rect(40, 637, 180, 119, 7);
+  fill(0);
+  text("MISSILE\nSYSTEM", 90,690);
 }
 
 void createPoints()

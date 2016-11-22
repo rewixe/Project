@@ -1,0 +1,14 @@
+Mass	2.02[12] M?
+Radius	1.711[12] R?
+Luminosity	25.4[12] L?
+Surface gravity (log g)	4.33[13] cgs
+Temperature	9,940[13] K
+Metallicity [Fe/H]	0.50[14] dex
+Rotation	16 km/s[15]
+Age	225–250[12] Myr
+a CMa B
+Mass	0.978[12] M?
+Radius	0.0084 ± 3%[16] R?
+Luminosity	0.056[17] L?
+Surface gravity (log g)	8.57[16] cgs
+Temperature	25,200[12] K

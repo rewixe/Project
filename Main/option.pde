@@ -74,6 +74,96 @@ public class option {
      popMatrix();
    }
    
+   if(starChoice == 2)
+   {
+     textSize(12);
+     pushMatrix();
+     translate(0,-340);
+     star2.star2();
+     popMatrix();
+     String star2info[] = loadStrings("star2info.txt");
+     pushMatrix();
+     translate(315,420);
+     for (int i = 0 ; i < star2info.length; i++) 
+     { 
+      fill(255,0,0);
+      text(star2info[i], 0,(270*((i+0.3)*0.05)));
+     }
+     popMatrix();
+   }
+     
+   if(starChoice == 3)
+   {
+     textSize(12);
+     pushMatrix();
+     translate(0,-340);
+     star3.star3(); 
+     popMatrix();
+     String star3info[] = loadStrings("star3info.txt");
+     pushMatrix();
+     translate(315,420);
+     for (int i = 0 ; i < star3info.length; i++) 
+     { 
+      fill(255,0,0);
+      text(star3info[i], 0,(270*((i+0.3)*0.05)));
+     }
+     popMatrix();
+   }
+   
+   if(starChoice == 4)
+   {
+     textSize(12);
+     pushMatrix();
+     translate(0,-340);
+     star4.star4(); 
+     popMatrix();
+     String star4info[] = loadStrings("star4info.txt");
+     pushMatrix();
+     translate(315,420);
+     for (int i = 0 ; i < star4info.length; i++) 
+     { 
+      fill(255,0,0);
+      text(star4info[i], 0,(270*((i+0.3)*0.05)));
+     }
+     popMatrix();
+   }
+   
+   if(starChoice == 5)
+   {
+     textSize(12);
+     pushMatrix();
+     translate(0,-340);
+     star5.star5();
+     popMatrix();
+     String star5info[] = loadStrings("star5info.txt");
+     pushMatrix();
+     translate(315,420);
+     for (int i = 0 ; i < star5info.length; i++) 
+     { 
+      fill(255,0,0);
+      text(star5info[i], 0,(270*((i+0.3)*0.05)));
+     }
+     popMatrix();
+   }
+   
+   if(starChoice == 6)
+   {
+     textSize(12);
+     pushMatrix();
+     translate(0,-340);
+     star6.star6(); 
+     popMatrix();
+     String star6info[] = loadStrings("star6info.txt");
+     pushMatrix();
+     translate(315,420);
+     for (int i = 0 ; i < star6info.length; i++) 
+     { 
+      fill(255,0,0);
+      text(star6info[i], 0,(270*((i+0.3)*0.05)));
+     }
+     popMatrix();
+   }
+   
 }
  
  public void option4() 

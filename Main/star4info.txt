@@ -1,0 +1,8 @@
+Mass	0.102 ± 0.010[7] M?
+Radius	0.14 R?
+Luminosity	0.00006 L?
+Temperature	2,670 K
+Luyten 726-8 B
+Mass	0.100 ± 0.010[7] M?
+Radius	0.14 R?
+Luminosity	0.00004 L?
