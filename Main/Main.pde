@@ -5,7 +5,7 @@ void setup()
 }
 
 
-void drawDateBox()
+void drawDateBox() //creates box for date
 {
   strokeWeight(1);
   stroke(0,190,255);
@@ -13,7 +13,7 @@ void drawDateBox()
   rect(width*0.03, height*0.06, width*0.2, height*0.06,7);
 }
 
-void drawTimeBox()
+void drawTimeBox() //creates box for time
 {
   strokeWeight(1);
   stroke(0,190,255);
@@ -21,7 +21,7 @@ void drawTimeBox()
   rect(width*0.03, height*0.15, width*0.2, height*0.06,7);
 }
 
-void drawOptionBox()
+void drawOptionBox() //creates box for option buttons
 {
   fill(0);
   noStroke();
@@ -35,7 +35,7 @@ void drawOptionBox()
   rect(width*0.03, height*0.3, width*0.2, height*0.66, 7);
 }
 
-void drawIntroBox()
+void drawIntroBox() //creates a box for introductory text
 {
   strokeWeight(1);
   stroke(0,190,255);
@@ -43,7 +43,7 @@ void drawIntroBox()
   rect(width*0.3, height*0.06, width*0.35, height*0.22, 7);
 }
 
-void drawMainScreen()
+void drawMainScreen() //creates main screen box
 {
   strokeWeight(1);
   stroke(0,190,255);
@@ -51,7 +51,7 @@ void drawMainScreen()
   rect(width*0.3, height*0.3, width*0.35, height*0.66, 7);
 }
 
-void drawGraphBox()
+void drawGraphBox() //creates box for graph
 {
   strokeWeight(1);
   stroke(0,190,255);
@@ -59,7 +59,7 @@ void drawGraphBox()
   rect(width*0.7, height*0.06, width*0.25, height*0.3, 7);
 }
 
-void drawButtons()
+void drawButtons() //draws buttons which change graph
 {
   strokeWeight(1);
   stroke(0,190,255);
@@ -67,22 +67,22 @@ void drawButtons()
   fill(0,190,255);
   rect(width*0.7, height*0.4, width*0.04, height*0.05, 7);
   fill(0);
-  text("1", width*0.715, height*0.435);
+  text("1", width*0.715, height*0.435); //button 1
   fill(0,190,255);
   rect(width*0.75, height*0.4, width*0.04, height*0.05, 7);
   fill(0);
-  text("2", width*0.765, height*0.435);
+  text("2", width*0.765, height*0.435); //button 2
   fill(0,190,255);
   rect(width*0.7, height*0.46, width*0.04, height*0.05, 7);
   fill(0);
-  text("3", width*0.715, height*0.495);
+  text("3", width*0.715, height*0.495); //button 3
   fill(0,190,255);
   rect(width*0.75, height*0.46, width*0.04, height*0.05, 7);
   fill(0);
-  text("4", width*0.765, height*0.495);
+  text("4", width*0.765, height*0.495); //button 4
 }
 
-void drawRadar()
+void drawRadar() //draws radar 
 {
   strokeWeight(1);
   stroke(0,190,255);
@@ -97,7 +97,7 @@ void drawRadar()
   ellipse(width*0.825, height*0.8, 20, 20);
 }
 
-void dateAndTime()
+void dateAndTime() //draws the time and date
 {
   strokeWeight(1);
   fill(0);
@@ -140,7 +140,7 @@ void dateAndTime()
   text(s, width*0.140, height*0.19375);
 }
 
-void drawGraph()
+void drawGraph() //draws the graph axes
 {
   strokeWeight(1);
   float x = 720;
@@ -159,7 +159,7 @@ void drawGraph()
   popMatrix();
 }
 
-void createGraph()
+void createGraph() //draws the graph line
 {
   frameRate(9);
   strokeWeight(1);
@@ -184,7 +184,7 @@ void createGraph()
   }
 }
 
-void createRadar()
+void createRadar() //draws moving radar
 {
   strokeWeight(1);
   float centrex; 
@@ -207,78 +207,78 @@ void createRadar()
   }  
 }
 
-void writeIntro()
+void writeIntro() //writes introduction
 {
   strokeWeight(1);
   textSize(20);
   fill(0, 190, 255);
-  String txt = "Welcome to the system interface.\nPlease select an option";
+  String txt = "Welcome to the system interface. Please select an option from the option box to begin";
   text(txt, width*0.330, height*0.0875, width*0.250, height*0.15); 
 }
 
-void optionsButtons()
+void optionsButtons() //draws buttons for the options
 {
   strokeWeight(1);
   stroke(0,190,255);
   fill(0,0,0);
   fill(0,190,255);
-  rect(40, 250, 180, 119, 7);
+  rect(width*0.040, height*0.3125, width*0.180, height*0.14875, 7);
   fill(0);
-  text("STATUS", 90,320);
+  text("STATUS", width*0.090, height*0.4); //option 1
   fill(0,190,255);
-  rect(40, 379, 180, 119, 7);
+  rect(width*0.040, height*0.47375, width*0.180, height*0.14875, 7);
   fill(0);
-  text("STAR\n MAP", 100,430);
+  text("STAR\n MAP", width*0.100, height*0.5375); //option 2
   fill(0,190,255);
-  rect(40, 508, 180, 119, 7);
+  rect(width*0.040, height*0.635, width*0.180, height*0.14875, 7);
   fill(0);
-  text("STAR\nINFO", 105,560);
+  text("STAR\nINFO", width*0.105, height*0.7); //option 3
   fill(0,190,255);
-  rect(40, 637, 180, 119, 7);
+  rect(width*0.040, height*0.79625, width*0.180, height*0.14875, 7);
   fill(0);
-  text("MISSILE\nSYSTEM", 90,690);
+  text("MISSILE\nSYSTEM", width*0.090, height*0.8625); //option 4
 }
 
-void createPoints()
+void createPoints() //creates the  points on the star map
 {
   strokeWeight(1);
   noFill();
   if(optionChoice == 2)
   {
-    ellipse(v1.x, v1.y, 30, 30);
-    ellipse(v2.x, v2.y, 12, 12);
-    ellipse(v3.x, v3.y, 24, 24);
-    ellipse(v4.x, v4.y, 50, 50);
-    ellipse(v5.x, v5.y, 30, 30);
-    ellipse(v6.x, v6.y, 30, 30);
+    ellipse(v1.x, v1.y, width*0.030, height*0.0375);
+    ellipse(v2.x, v2.y, width*0.012, height*0.015);
+    ellipse(v3.x, v3.y, width*0.024, height*0.03);
+    ellipse(v4.x, v4.y, width*0.050, height*0.0625);
+    ellipse(v5.x, v5.y, width*0.030, height*0.0375);
+    ellipse(v6.x, v6.y, width*0.030, height*0.0375);
   }
 }
 
-void createMissiles()
+void createMissiles() //creates the missile selection option
 {
   missile1 = loadImage("missile1.jpg");
   missile2 = loadImage("missile2.jpg");
   missile3 = loadImage("missile3.jpg");
   missile4 = loadImage("missile4.jpg");
   
-  if(optionChoice == 4)
-  {
-    fill(0,190,255);
-    textSize(25);
-    stroke(0, 190, 255);
-    strokeWeight(7);
-    rect(315, 255, 150, 209, 7);
-    text("TYPE-77", 315, 494);
-    image(missile1, 315, 255, 150, 209);
-    rect(485, 255, 150, 209, 7);
-    text("AIM-9X", 485, 494);
-    image(missile2, 485, 255, 150, 209);
-    rect(315, 504, 150, 209, 7);
-    text("ARCHER-11", 315, 743);
-    image(missile3, 315, 504, 150, 209);
-    rect(485, 504, 150, 209, 7);
-    text("BRAUN-2X", 485, 743);
-    image(missile4, 485, 504, 150, 209);
+ if(optionChoice == 4)
+ {
+   fill(0,190,255);
+   textSize(25);
+   stroke(0, 190, 255);
+   strokeWeight(7);
+   rect(width*0.315, height*0.31875, width*0.150, height*0.26125, 7);
+   text("TYPE-77", width*0.315, height*0.6175);
+   image(missile1, width*0.315, height*0.31875, width*0.150, height*0.26125);
+   rect(width*0.485, height*0.31875, width*0.150, height*0.26125, 7);
+   text("AIM-9X", width*0.485, height*0.6175);
+   image(missile2, width*0.485, height*0.31875, width*0.150, height*0.26125);
+   rect(width*0.315, height*0.63, width*0.150, height*0.26125, 7);
+   text("ARCHER-11", width*0.315, height*0.92875);
+   image(missile3, width*0.315, height*0.63, width*0.150, height*0.26125);
+   rect(width*0.485, height*0.63, width*0.150, height*0.26125, 7);
+   text("BRAUN-2X", width*0.485, height*0.92875);
+   image(missile4, width*0.485, height*0.63, width*0.150, height*0.26125);
   }
 }
 
@@ -286,9 +286,10 @@ void createMissiles()
 
 
 
-PImage missile1, missile2, missile3, missile4;
 
-PVector v1, v2, v3, v4, v5, v6;
+PImage missile1, missile2, missile3, missile4; //used for images in ption 4
+
+PVector v1, v2, v3, v4, v5, v6; //vectors for star map in option 2
 {
   v1 = new PVector(380, 300);
   v2 = new PVector(580, 320);
@@ -302,22 +303,14 @@ int c1 = 0;
 int c2 = 190;
 int c3 = 255;
 
-String axis1 = "S P E E D";
+String axis1 = "S P E E D"; //sets initial values for axes
 String axis2 = "T H R U S T";
 
-option option1 = new option();
-option option2 = new option();
-option option3 = new option();
-option option4 = new option();
+option optionMain = new option(); //creates object
 
-stars star1 = new stars();
-stars star2 = new stars();
-stars star3 = new stars();
-stars star4 = new stars();
-stars star5 = new stars();
-stars star6 = new stars();
+stars starMain = new stars(); //creates object
 
-int starChoice = 1;
+int starChoice = 1; //creates variables for choice selection in options 2 and 4 and for choosing initial option
 int optionChoice = 1;
 int missileChoice = 1;
 
@@ -342,7 +335,7 @@ void draw()
   createGraph();
   drawGraph();
   createPoints();
-  if(optionChoice == 4)
+  if(optionChoice == 4) //create missile put into if statement because it slows down the program significantly
   {
     createMissiles();
   }
@@ -354,7 +347,7 @@ void draw()
     fill(0);
     rect(310,595,330,150,7);
     fill(255);
-    star1.star1();
+    starMain.star1();
   }
   
   //Star 2
@@ -364,7 +357,7 @@ void draw()
     fill(0);
     rect(310,595,330,150,7);
     fill(255);
-    star2.star2();
+    starMain.star2();
   }
   
   //Star 3
@@ -374,7 +367,7 @@ void draw()
     fill(0);
     rect(310,595,330,150,7);
     fill(255);
-    star3.star3();
+    starMain.star3();
   }
   
   //Star 4
@@ -384,7 +377,7 @@ void draw()
     fill(0);
     rect(310,595,330,150,7);
     fill(255);
-    star4.star4();
+    starMain.star4();
   }
   
   //Star 5
@@ -394,7 +387,7 @@ void draw()
     fill(0);
     rect(310,595,330,150,7);
     fill(255);
-    star5.star5();
+    starMain.star5();
   }
   
   //Star 6
@@ -404,10 +397,10 @@ void draw()
     fill(0);
     rect(310,595,330,150,7);
     fill(255);
-    star6.star6();
+    starMain.star6();
   }
   
-  
+  //draws red box around selected missile in option 4
   if (optionChoice == 4 && missileChoice == 1)
   {
     stroke(255,0,0);
@@ -442,7 +435,9 @@ void draw()
 
 
 void mouseClicked() {
-  if (mouseX > 700 && mouseX < 740 && mouseY > 320 && mouseY < 360) {
+  //used to change the axes of the graph
+  if (mouseX > 700 && mouseX < 740 && mouseY > 320 && mouseY < 360) 
+  {
     c1 = 0;
     c2 = 190;
     c3 = 255;
@@ -450,7 +445,8 @@ void mouseClicked() {
     axis2 = "T H R U S T";
   }
   
-    if (mouseX > 750 && mouseX < 790 && mouseY > 320 && mouseY < 360) {
+  if (mouseX > 750 && mouseX < 790 && mouseY > 320 && mouseY < 360) 
+  {
     c1 = 255;
     c2 = 0;
     c3 = 0;
@@ -475,27 +471,29 @@ void mouseClicked() {
     axis1 = "G - F O R C E";
     axis2 = "S P E E D";
   }
-    
+  
+  //Used for buttons to select options
   if (mouseX > 40 && mouseX < 220 && mouseY > 250 && mouseY < 369) 
   {
-    option1.option1();
+    optionMain.option1();
   }
   
   if (mouseX > 40 && mouseX < 220 && mouseY > 379 && mouseY < 498) 
   {
-    option2.option2();
+    optionMain.option2();
   }
   
   if (mouseX > 40 && mouseX < 220 && mouseY > 508 && mouseY < 627) 
   {
-    option3.option3();
+    optionMain.option3();
   }
   
   if (mouseX > 40 && mouseX < 220 && mouseY > 637 && mouseY < 756) 
   {
-    option4.option4();
+    optionMain.option4();
   }
   
+  //Used in the star map to select more infoormation about a star
   //Star 1
   if (mouseX > (v1.x-15) && mouseX < (v1.x+15) && mouseY > (v1.y-15) && mouseY < (v1.y+15) && optionChoice == 2)
   {

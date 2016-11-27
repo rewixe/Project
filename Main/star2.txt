@@ -1,10 +1,10 @@
 Luhman 16 is a binary brown-dwarf system 
-in the southern constellation Vela at a 
-distance of approximately 6.5 light-years
-(2.0 pc) from the Sun. These are the closest 
-known brown dwarfs and the closest 
-system found since the measurement of the proper 
-motion of Barnard's Star in 1916, and the 
-third-closest known system to the Sun 
-(after the Alpha Centauri system 
-and Barnard's Star).
+in the constellation Vela at a distance 
+of approximately 6.5 light-years from the 
+Sun. These are the closest known brown 
+dwarfs and the closest system found since
+the measurement of the proper motion of 
+Barnard's Star in 1916, and the third-
+closest known system to the Sun (after 
+the Alpha Centauri system and Barnard's 
+Star).

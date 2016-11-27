@@ -1,24 +1,19 @@
 Alpha Centauri A
-Mass	1.100[7] M?
-Radius	1.227[8] R?
-Luminosity	1.519[7] L?
-Surface gravity (log g)	4.30[9] cgs
-Temperature	5,790[7] K
-Metallicity [Fe/H]	0.20[7] dex
-Rotation	22[8] days
-Age	4.4 ± ?[10] Gyr
+Mass:	1.100 
+Radius:	1.227 
+Luminosity:	1.519
+Surface gravity: 4.30 cgs
+Temperature:	5,790 K
+Metallicity:	0.20 dex
+Rotation	22 days
+Age	4.4 ± Gyr
+
 Alpha Centauri B
-Mass	0.907[7] M?
-Radius	0.865[8] R?
-Luminosity	0.5002[7] L?
-Surface gravity (log g)	4.37[9] cgs
-Temperature	5,260[7] K
-Metallicity	0.23[7]
-Rotation	41[8] days
-Age	6.5 ± ?[10] Gyr
-Orbit[11]
-Primary	A
-Companion	B
-Period (P)	79.91 ± 0.011 yr
-Semi-major axis (a)	17.57 ± 0.022"
-Eccentricity (e)	0.5179 ± 0.00076
+Mass:	0.907 
+Radius:	0.865 
+Luminosity:	0.5002
+Surface gravity: (log g) 4.37 cgs
+Temperature:	5,260 K
+Metallicity:	0.23 dex
+Rotation:	41 days
+Age:	6.5 ±  Gyr

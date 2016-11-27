@@ -1,8 +1,9 @@
-Mass	0.144[7] M?
-Radius	0.196 ± 0.008[8] R?
-Luminosity (bolometric)	0.0035[9] L?
-Luminosity (visual, LV)	0.0004[9] L?
-Temperature	3,134 ± 102[9] K
-Metallicity	10–32% Sun[10]
-Rotation	130.4 d[11]
-Age	About 10[12] Gyr
+Barnard's Star
+Mass:	0.144
+Radius:	  0.196 ± 0.008
+Luminosity:	0.0035
+Luminosity:  0.0004
+Temperature:	3,134 ± 102 K
+Metallicity:	10–32% Sun
+Rotation:	130.4 days
+Age:  10[12] Gyr

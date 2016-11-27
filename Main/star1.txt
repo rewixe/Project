@@ -1,10 +1,10 @@
-Alpha Centauri (a Cen) is the closest star system to the 
-Solar System at a distance of 4.37 light-years (1.34 pc).
-It consists of three stars: the pair Alpha Centauri A 
-and Alpha Centauri B and a small and faint red dwarf, 
-Proxima Centauri, that may be gravitationally bound 
-to the other two. To the unaided eye, the two main 
-components appear as a single object of an apparent 
-visual magnitude of -0.27, forming the brightest star 
-in the southern constellation Centaurus and the 
+Alpha Centauri is the closest star system to 
+the Solar System at a distance of 4.37 lightyears.
+It consists of three stars: the pair Alpha 
+Centauri A and Alpha Centauri B and faint 
+red dwarf, Proxima Centauri. To the naked 
+eye, the two main components appear as a 
+single object of an apparent visual 
+magnitude of -0.27, forming the brightest star 
+in the constellation Centaurus and the 
 third-brightest star in the night sky. 

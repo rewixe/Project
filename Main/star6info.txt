@@ -1,11 +1,9 @@
-Mass	0.09[7] M?
-Radius	0.16[8] R?
-Luminosity (bolometric)	0.0014 L?
-Luminosity (visual, LV)	0.00002 L?
-Habitable zone inner limit	0.024[9] AU
-Habitable zone outer limit	0.052[9] AU
-Surface gravity (log g)	5.5[10] cgs
-Temperature	2,800 ± 100[11] K
-Metallicity [Fe/H]	+0.18 ± 0.17[12] dex
-Rotational velocity (v sin i)	< 3.0[4] km/s
-Age	100–350[11] Myr
+Wolf 359
+Mass:	0.09 
+Radius:	0.16 
+Luminosity: 	0.0014 
+Surface gravity: 5.5 cgs
+Temperature:	2,800 ± 100 K
+Metallicity: 	+0.18 ± 0.17 dex
+Rotation: 3.0 km/s
+Age:	100–350 Myr

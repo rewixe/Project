@@ -1,8 +1,9 @@
-Mass	0.102 ± 0.010[7] M?
-Radius	0.14 R?
-Luminosity	0.00006 L?
-Temperature	2,670 K
-Luyten 726-8 B
-Mass	0.100 ± 0.010[7] M?
-Radius	0.14 R?
-Luminosity	0.00004 L?
+Luyten 726-8
+Mass:	0.102 ± 0.010
+Radius:	0.14
+Luminosity:	0.00006
+Surface gravity: 4.9 cgs
+Temperature:	2,670 K
+Metallicity:   0.8 dex
+Rotation:  205 days
+Age:  5.5 Gyr

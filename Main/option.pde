@@ -60,7 +60,8 @@ public class option {
      textSize(12);
      pushMatrix();
      translate(0,-340);
-     star1.star1();
+     textSize(14);
+     starMain.star1();
      popMatrix();
      String star1info[] = loadStrings("star1info.txt");
      pushMatrix();
@@ -79,7 +80,8 @@ public class option {
      textSize(12);
      pushMatrix();
      translate(0,-340);
-     star2.star2();
+     textSize(14);
+     starMain.star2();
      popMatrix();
      String star2info[] = loadStrings("star2info.txt");
      pushMatrix();
@@ -97,7 +99,8 @@ public class option {
      textSize(12);
      pushMatrix();
      translate(0,-340);
-     star3.star3(); 
+     textSize(14);
+     starMain.star3(); 
      popMatrix();
      String star3info[] = loadStrings("star3info.txt");
      pushMatrix();
@@ -115,7 +118,8 @@ public class option {
      textSize(12);
      pushMatrix();
      translate(0,-340);
-     star4.star4(); 
+     textSize(14);
+     starMain.star4(); 
      popMatrix();
      String star4info[] = loadStrings("star4info.txt");
      pushMatrix();
@@ -133,7 +137,8 @@ public class option {
      textSize(12);
      pushMatrix();
      translate(0,-340);
-     star5.star5();
+     textSize(14);
+     starMain.star5();
      popMatrix();
      String star5info[] = loadStrings("star5info.txt");
      pushMatrix();
@@ -151,7 +156,8 @@ public class option {
      textSize(12);
      pushMatrix();
      translate(0,-340);
-     star6.star6(); 
+     textSize(14);
+     starMain.star6(); 
      popMatrix();
      String star6info[] = loadStrings("star6info.txt");
      pushMatrix();
