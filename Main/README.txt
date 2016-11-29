@@ -3,6 +3,9 @@ Student: Tavi Nolan
 Student ID: c15406532
 Course: Computer Science (International)
 
+Main code is in Main.pde
+Classes are option.pde and stars.pde
+
 UI for spaceship
 
 Consists of a number of features:
